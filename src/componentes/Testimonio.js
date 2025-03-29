@@ -1,14 +1,14 @@
 import React from "react";
 import '../hojas-de-estilo/Testimonio.css'
 
-function Testimonio() {
+function Testimonio(props) {
   return (
     <div className="contenedor-testimonio">
-      <img className="imagen-testimonio" src={require("../imagenes/testimonio-emma.png")} alt="Foto de Emma"/>
+      <img className="imagen-testimonio" src={require(`../imagenes/testimonio-${props.imagen}.png`)} alt="`Foto de ${nombre}`"/>
       <div className="contenedor-texto-testimonio">
-        <p className="nombre-testimonio">Emma Bostianete en Suecia city</p>
-        <p className="cargo-testimonio">Ingeniera de Software en Spotify</p>
-        <p className="texto-testimonio">Me encanta la forma en que los desarrollo por eso estoy desarrollando. Las clases son muy dinamicas y si he logrado aprender y poner en practica en la empresa. Estudiar los curso de freeTech me ha dado muchas habilidades y la confianza para obtener el trabajo de mis sueños. </p>
+        <p className="nombre-testimonio">{props.nombre} en {props.pais}</p>
+        <p className="cargo-testimonio">{props.cargo} en {props.empresa}</p>
+        <p className="texto-testimonio">"{props.testimonio}" </p>
       </div>
     </div>
   );

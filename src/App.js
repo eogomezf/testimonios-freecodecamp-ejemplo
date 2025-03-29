@@ -6,7 +6,13 @@ function App() {
     <div className="App">
       <div className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos de FreeTeachCamp</h1>
-        <Testimonio />
+        <Testimonio 
+        nombre='Emma Watson'
+        pais='Suecia'
+        imagen='emma'
+        cargo='Ingeniera de Software'
+        empresa='Spotify'
+        testimonio='Me encanta la forma en que los desarrollo por eso estoy desarrollando. Las clases son muy dinámicas y si he logrado aprender y poner en practica en la empresa. Estudiar los curso de freeTech me ha dado muchas habilidades y la confianza para obtener el trabajo de mis sueños.'/>
       </div>
       
     </div>
